@@ -1,3 +1,7 @@
+mfb_baseline/*.pyc
+mfb_coatt_glove/*.pyc
+eval/*.pyc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

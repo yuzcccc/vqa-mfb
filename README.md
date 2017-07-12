@@ -6,7 +6,7 @@ This project is the implementation of the paper **Multi-modal Factorized Bilinea
 
 Our code is implemented based on the [vqa-mcb](https://github.com/akirafukui/vqa-mcb) project. The data preprocessing and and other prerequisites are the same with theirs. Before running our scripts to train or test MFB model, see the `Prerequisites` and `Data Preprocessing` sections in the README of vqa-mcb's project first. 
 
-- The Caffe version required for our MFB is slightly different from the MCB. We add some layers, e.g., sum pooling, permute and KLD loss layers to the `feature/20160617_cb_softattention` branch of Caffe for MCB. Please checkout our caffe version [here](https://github.com/yuzcccc/caffe) and compile it. 
+- The Caffe version required for our MFB is slightly different from the MCB. We add some layers, e.g., sum pooling, permute and KLD loss layers to the `feature/20160617_cb_softattention` branch of Caffe for MCB. Please checkout our caffe version [here](https://github.com/yuzcccc/caffe) and compile it. Note that CuDNN is not compatible with sum pooling currently, you should switch it off to run the codes correctly.
 
 ## Pretrained Models
 

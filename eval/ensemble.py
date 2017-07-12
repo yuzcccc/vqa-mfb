@@ -8,9 +8,9 @@ Place each model in its own folder. The folder must contain:
 - proto_test.prototxt
 - adict.json
 - vdict.json
-- aux.json
+- auxiliary.json
 
-aux.json should contain the following keys:
+auxiliary.json should contain the following keys:
 
 - batch_size (value should be integer)
 - data_shape (value should be array of integer)
@@ -66,11 +66,11 @@ def verify_one(folder_path):
     proto_path = folder_path + '/proto_test.prototxt'
     adict_path = folder_path + '/adict.json'
     vdict_path = folder_path + '/vdict.json'
-    aux_path = folder_path + '/aux.json'
+    aux_path = folder_path + '/auxiliary.json'
     assert os.path.exists(proto_path), 'proto_test.prototxt missing'
     assert os.path.exists(adict_path), 'adict.json missing'
     assert os.path.exists(vdict_path), 'vdict.json missing'
-    assert os.path.exists(aux_path), 'aux.json missing'
+    assert os.path.exists(aux_path), 'auxiliary.json missing'
     with open(aux_path, 'r') as f:
         aux = json.load(f)
     batch_size = int(aux['batch_size'])

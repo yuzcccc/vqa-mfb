@@ -34,7 +34,7 @@ def get_solver(folder):
     s.clip_gradients = 10
     return s
 
-def get_aux_json():
+def get_auxiliary_json():
     aux = {}
     aux["batch_size"] = int(config.VAL_BATCH_SIZE)
     aux["data_shape"] = [2048]
@@ -200,8 +200,8 @@ def main():
 
     with open('./%s/solver.prototxt'%folder, 'w') as f:
         f.write(str(get_solver(folder)))    
-    with open('./%s/aux.json'%folder, 'w') as f:
-        json.dump(get_aux_json(),f, indent=2)
+    with open('./%s/auxiliary.json'%folder, 'w') as f:
+        json.dump(get_auxiliary_json(),f, indent=2)
 
     caffe.set_device(config.TRAIN_GPU_ID)
     caffe.set_mode_gpu()

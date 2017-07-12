@@ -19,7 +19,7 @@ import time
 def get_solver(folder):
     s = caffe_pb2.SolverParameter()
     s.train_net = './%s/proto_train.prototxt'%folder
-    s.snapshot = 10000
+    s.snapshot = int(config.VALIDATE_INTERVAL)
     s.snapshot_prefix = './%s/'%folder
     s.max_iter = int(config.MAX_ITERATIONS)
     s.display = int(config.VALIDATE_INTERVAL)
@@ -296,7 +296,7 @@ def main():
         # store the train loss
         train_loss[it] = solver.net.blobs['loss'].data
    
-        if it % config.PRINT_INTERVAL == 0:
+        if it % config.PRINT_INTERVAL == 0 and it != 0:
             elapsed = (time.clock() - start)
             print 'Iteration:', it
             c_mean_loss = train_loss[it-config.PRINT_INTERVAL:it].mean()

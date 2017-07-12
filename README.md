@@ -1,6 +1,6 @@
 # Multi-modal Factorized Bilinear Pooling (MFB)
 
-This project is the implementation of the paper **Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering**. Compared with existing state-of-the-art approaches such as MCB and MLB, our MFB models achieved superior performance on the large-scale VQA-1.0 and VQA-2.0 datasets. if the codes in this project help your research, please cite our paper :) 
+This project is the implementation of the paper **Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering**. Compared with existing state-of-the-art approaches such as MCB and MLB, our MFB models achieved superior performance on the large-scale VQA-1.0 and VQA-2.0 datasets. 
 
 ## Prerequisites
 
@@ -14,19 +14,26 @@ We release the "MFB+CoAtt+GloVe+VG" models from the paper, which achieves **66.8
 - [VQA-1.0 model](http://pan.baidu.com/s/1o8LURge) on the BaiDuYun
 - [VQA-2.0 model](http://pan.baidu.com/s/1pLjtkSV) on the BaiduYun
 
-## Training from scratch
+## Training from Scratch
 
 We provide the scripts for training two MFB models from scratch, i.e., `mfb-baseline` and `mfb-coatt-glove` folders. Simply running the python scripts `python train_mfb_baseline.py` or `python train_mfb_coatt_glove.py` will start training from scratch. 
 
 - Most of the hyper-parameters and configrations with comments are defined in the `config.py` file. 
 - The solver configrations are defined in the `get_solver` function in the `train_*.py` scripts. 
-- Pretrained GloVe word embedding model (the spacy library) is required to train the mfb-coatt-glove model. The installation of spacy and GloVe model can be referred to [here](https://github.com/akirafukui/vqa-mcb/tree/master/train)
+- Pretrained GloVe word embedding model (the spacy library) is required to train the mfb-coatt-glove model. The installation instructions of spacy and GloVe model can be found [here](https://github.com/akirafukui/vqa-mcb/tree/master/train).
 
 ## Evaluation
 
 To generate an answers JSON file in the format expected by the VQA evaluation code and VQA test server, you can use `eval/ensemble.py`. This code can also ensemble multiple models. Running `python ensemble.py` will print out a help message telling you what arguments to use.
 
+## Licence
+
+This code is distributed under MIT LICENSE. The released models are only allowed for non-commercial use.
+
 ## Citation
+
+If the codes are helpful for your research, please cite
+
 ```
 @article{zhou2017mfb,
   title={Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering},
@@ -35,3 +42,7 @@ To generate an answers JSON file in the format expected by the VQA evaluation co
   year={2017},
 }
 ```
+
+## Concat
+
+Zhou Yu  [yuz(AT)hdu.edu.cn]

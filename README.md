@@ -11,9 +11,9 @@ Our code is implemented based on the [vqa-mcb](https://github.com/akirafukui/vqa
 ## Pre-trained Models
 
 We release the "MCB+CoAtt+GloVe+VG" models from the paper, which achieves **66.87%** on real open-ended test-dev of VQA-1.0 dataset, and **65.09** on the test-dev of VQA-2.0 (VQA Challenge 2017) dataset
-[VQA-1.0 model](http://pan.baidu.com/s/1o8LURge) on the BaiDuYun
-[VQA-2.0 model](http://pan.baidu.com/s/1pLjtkSV) on the BaiduYun
-The results JSON files (results.zip for VQA-1.0) are also included in the model folders, which can be uploaded to the evaluation servers directly.
+- [VQA-1.0 model](http://pan.baidu.com/s/1o8LURge) on the BaiDuYun
+- [VQA-2.0 model](http://pan.baidu.com/s/1pLjtkSV) on the BaiduYun
+- The results JSON files (results.zip for VQA-1.0) are also included in the model folders, which can be uploaded to the evaluation servers directly.
 
 ## Training from scratch
 

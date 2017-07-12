@@ -4,15 +4,14 @@ TEST_GPU_ID = 0
 BATCH_SIZE = 200
 VAL_BATCH_SIZE = 200
 PRINT_INTERVAL = 100
-VALIDATE_INTERVAL = 100 # 1 epoch for train set
+VALIDATE_INTERVAL = 5000 
 MAX_ITERATIONS = 100000
-RESTORE_ITER = 0 # iteration to restore. recall that .solverstate file is needed!
+RESTORE_ITER = 0 # iteration to restore. *.solverstate file is needed!
 # what data to use for training
 TRAIN_DATA_SPLITS = 'train'
 # what data to use for the vocabulary
 QUESTION_VOCAB_SPACE = 'train'
 ANSWER_VOCAB_SPACE = 'train' # test/test-dev/genome should not appear here
-#GLOVE=True
 
 #network parameters
 NUM_OUTPUT_UNITS = 3000 # This is the answer vocabulary size

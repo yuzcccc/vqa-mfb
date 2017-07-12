@@ -21,8 +21,8 @@ def get_solver(folder):
     s.train_net = './%s/proto_train.prototxt'%folder
     s.snapshot = 10000
     s.snapshot_prefix = './%s/'%folder
-    s.max_iter = 1000000
-    s.display = 10000
+    s.max_iter = int(config.MAX_ITERATIONS)
+    s.display = int(config.VALIDATE_INTERVAL)
     s.type = 'Adam'
     s.stepsize = int(config.MAX_ITERATIONS*0.4)
     s.gamma = 0.5
@@ -43,7 +43,7 @@ def get_auxiliary_json():
     return aux
 
 
-def mfb_coatt(mode, batchsize, T, question_vocab_size, folder):
+def mfb_baseline(mode, batchsize, T, question_vocab_size, folder):
     n = caffe.NetSpec()
     mode_str = json.dumps({'mode':mode, 'batchsize':batchsize,'folder':folder})
     if mode == 'val':
@@ -191,11 +191,11 @@ def main():
     print 'answer vocab size:', len(answer_vocab)
 
     with open('./%s/proto_train.prototxt'%folder, 'w') as f:
-        f.write(str(mfb_coatt(config.TRAIN_DATA_SPLITS, config.BATCH_SIZE, \
+        f.write(str(mfb_baseline(config.TRAIN_DATA_SPLITS, config.BATCH_SIZE, \
             config.MAX_WORDS_IN_QUESTION, len(question_vocab), folder)))
     
     with open('./%s/proto_test.prototxt'%folder, 'w') as f:
-        f.write(str(mfb_coatt('val', config.VAL_BATCH_SIZE, \
+        f.write(str(mfb_baseline('val', config.VAL_BATCH_SIZE, \
             config.MAX_WORDS_IN_QUESTION, len(question_vocab), folder)))
 
     with open('./%s/solver.prototxt'%folder, 'w') as f:

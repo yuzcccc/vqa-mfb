@@ -21,11 +21,11 @@ def get_solver(folder):
     s.train_net = './%s/proto_train.prototxt'%folder
     s.snapshot = 10000
     s.snapshot_prefix = './%s/'%folder
-    s.max_iter = 1000000
-    s.display = 10000
+    s.max_iter = int(config.MAX_ITERATIONS)
+    s.display = int(config.VALIDATE_INTERVAL)
     s.type = 'Adam'
     s.stepsize = int(config.MAX_ITERATIONS*0.4)
-    s.gamma = 0.25
+    s.gamma = 0.5
     s.lr_policy = "step"
     s.base_lr = 0.0007
     s.momentum = 0.9

@@ -247,7 +247,7 @@ def main():
             results.append([it, c_mean_loss, test_loss, acc_overall, acc_per_ques, acc_per_ans])
             best_result_idx = np.array([x[3] for x in results]).argmax()
             print 'Best accuracy of', results[best_result_idx][3], 'was at iteration', results[best_result_idx][0]
-            drawgraph(results,folder,config.MFB_FACTOR_NUM,config.MFB_OUT_DIM,prefix='mfb_coatt_glove')
+            drawgraph(results,folder,config.MFB_FACTOR_NUM,config.MFB_OUT_DIM,prefix='mfb_baseline')
              
 if __name__ == '__main__':
     main()

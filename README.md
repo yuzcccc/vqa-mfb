@@ -14,7 +14,7 @@ Figure 1: The MFB+CoAtt Network architecture for VQA.
 
 Our codes is implemented based on the high-quality [vqa-mcb](https://github.com/akirafukui/vqa-mcb) project. The data preprocessing and and other prerequisites are the same with theirs. Before running our scripts to train or test MFB model, see the `Prerequisites` and `Data Preprocessing` sections in the README of vqa-mcb's project first. 
 
-- The Caffe version required for our MFB is slightly different from the MCB. We add some layers, e.g., sum pooling, permute and KLD loss layers to the `feature/20160617_cb_softattention` branch of Caffe for MCB. Please checkout our caffe version [here](https://github.com/yuzcccc/caffe) and compile it. Note that CuDNN is not compatible with sum pooling currently, you should switch it off to run the codes correctly.
+- The Caffe version required for our MFB is slightly different from the MCB. We add some layers, e.g., sum pooling, permute and KLD loss layers to the `feature/20160617_cb_softattention` branch of Caffe for MCB. Please checkout our caffe version [here](https://github.com/yuzcccc/caffe) and compile it. **Note that CuDNN is not compatible with sum pooling currently, you should switch it off to run the codes correctly**.
 
 ## Pretrained Models
 
@@ -43,7 +43,7 @@ This code is distributed under MIT LICENSE. The released models are only allowed
 If the codes are helpful for your research, please cite
 
 ```
-@article{zhou2017mfb,
+@article{yu2017mfb,
   title={Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering},
   author={Zhou, Yu and Jun, Yu and Jianping, Fan and Dacheng, Tao},
   journal={IEEE International Conference on Computer Vision (ICCV)},

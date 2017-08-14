@@ -59,7 +59,7 @@ If the codes are helpful for your research, please cite
 @article{yu2017beyond,
   title={Beyond Bilinear: Generalized Multi-modal Factorized High-order Pooling for Visual Question Answering},
   author={Zhou, Yu and Jun, Yu and Chenchao, Xiang and Jianping, Fan and Dacheng, Tao},
-  journal={arxiv},
+  journal={arXiv preprint arXiv:1708.03619},
   year={2017}
 }
 ```

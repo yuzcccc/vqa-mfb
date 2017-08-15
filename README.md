@@ -25,8 +25,8 @@ We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the p
 
 |   Datasets\Models    | MCB | MFB | MFH  |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
-| VQA-1.0   | 65.38%   |66.87% [(Download)](http://pan.baidu.com/s/1o8LURge)   | **67.72%** [(Download)](http://pan.baidu.com/s/1c2neUv2)  |
-| VQA-2.0   | 62.33%*  |65.09% [(Download)](http://pan.baidu.com/s/1pLjtkSV)   | **66.12%** [(Download)](http://pan.baidu.com/s/1pLLUvIN)  |
+| VQA-1.0   | 65.38%   |66.87% [Baidu Yun](http://pan.baidu.com/s/1o8LURge)   | **67.72%** [Baidu Yun](http://pan.baidu.com/s/1c2neUv2) or [Dropbox](https://www.dropbox.com/s/qh1swgsq0na1bua/VQA1.0-mfh-coatt-glove-vg.zip?dl=0) |
+| VQA-2.0   | 62.33%*  |65.09% [Baidu Yun](http://pan.baidu.com/s/1pLjtkSV)   | **66.12%** [Baidu Yun](http://pan.baidu.com/s/1pLLUvIN) or [Dropbox](https://www.dropbox.com/s/zld15405a69how6/VQA2.0-mfh-coatt-glove-vg.zip?dl=0) |
 * the MCB result on VQA-2.0 is provided by the VQA Challenge organizer
 ## Training from Scratch
 

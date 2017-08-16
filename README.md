@@ -8,7 +8,7 @@ This project is the implementation of the paper **Multi-modal Factorized Bilinea
 ## Update!
 Our solution for the VQA Challenge 2017 is updated! 
 
-We proposed a **high-order** extention for MFB, i.e., the Multi-modal Factorized High-order Pooling (MFH). See the flowchart is Figure 2 and the implementations in `mfh_baseline` and `mfh-coatt-glove` folders. With an ensemble of 9 MFH+CoAtt+GloVe(+VG) models, **we won the 2nd place (tied with another team) in the VQA Challenge 2017**. The detailed information can be found in our paper (the second paper in the CITATION section on bottom of this page). 
+We proposed a **high-order** extention for MFB, i.e., the Multi-modal Factorized High-order Pooling (MFH). See the flowchart in Figure 2 and the implementations in `mfh_baseline` and `mfh-coatt-glove` folders. With an ensemble of 9 MFH+CoAtt+GloVe(+VG) models, **we won the 2nd place (tied with another team) in the VQA Challenge 2017**. The detailed information can be found in our paper (the second paper in the CITATION section on bottom of this page). 
 
 ![](https://github.com/yuzcccc/mfb/raw/master/imgs/MFH-github.png)
 <center>Figure 2: The high-order MFH model which consists of p MFB blocks (without sharing parameters).</center>

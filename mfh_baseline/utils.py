@@ -192,13 +192,13 @@ def exec_validation(device_id, mode, model_name, folder, it='', visualize=False)
         acc_perAnswerType = vqaEval.accuracy['perAnswerType']
         return mean_testloss, acc_overall, acc_perQuestionType, acc_perAnswerType
     elif mode == 'test-dev':
-        filename = './%s/vqa_OpenEnded_mscoco_test-dev2017_%s-'%(folder,folder)+str(it).zfill(8)+'_results'
+        filename = './%s/vqa_OpenEnded_mscoco_test-dev2015_%s-'%(folder,folder)+str(it).zfill(8)+'_results'
         with open(filename+'.json', 'w') as f:
             json.dump(final_list, f)
         if visualize:
             visualize_failures(stat_list,mode)
     elif mode == 'test':
-        filename = './%s/vqa_OpenEnded_mscoco_test2017_%s-'%(folder,folder)+str(it).zfill(8)+'_results'
+        filename = './%s/vqa_OpenEnded_mscoco_test2015_%s-'%(folder,folder)+str(it).zfill(8)+'_results'
         with open(filename+'.json', 'w') as f:
             json.dump(final_list, f)
         if visualize:

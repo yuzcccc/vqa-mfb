@@ -7,7 +7,7 @@ This project is the implementation of the paper **Multi-modal Factorized Bilinea
 
 
 ## Update Sep. 5th
-Using the image features(the model with adaptive K ranges from [10,100]) of [here](https://github.com/peteanderson80/bottom-up-attention), our MFH+CoAtt+GloVe model achieved the overall accuracy **68.76%** on the test-dev set of VQA-2.0 dataset. With an ensemble of 8 models, we achieved the new state-of-the-art performance on the [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/1/leaderboard) with the overall accuracy **70.92%**. 
+Using the image features (the model with adaptive K ranges from [10,100]) [here](https://github.com/peteanderson80/bottom-up-attention), our single MFH+CoAtt+GloVe model achieved the overall accuracy **68.76%** on the test-dev set of VQA-2.0 dataset. With an ensemble of 8 models, we achieved the new state-of-the-art performance on the VQA-2.0 dataset's [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/1/leaderboard) with the overall accuracy **70.92%**. 
 
 ## Update Aug. 1st
 Our solution for the VQA Challenge 2017 is updated! 

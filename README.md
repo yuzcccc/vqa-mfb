@@ -6,10 +6,10 @@ This project is the implementation of the paper **Multi-modal Factorized Bilinea
 <center>Figure 1: The MFB+CoAtt Network architecture for VQA.</center>
 
 
-## Update Sep. 5
-Using the image features(the model with adaptive K ranges from [10,100]) of [here](https://github.com/peteanderson80/bottom-up-attention), our MFH+CoAtt+GloVe model achieved the accuracy **68.76%** on the test-dev set of VQA-2.0 dataset. With an ensemble of 8 models, we achieved the new state-of-the-art performance on the [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/1/leaderboard) with **70.92%** on the test-standard set. 
+## Update Sep. 5th
+Using the image features(the model with adaptive K ranges from [10,100]) of [here](https://github.com/peteanderson80/bottom-up-attention), our MFH+CoAtt+GloVe model achieved the overall accuracy **68.76%** on the test-dev set of VQA-2.0 dataset. With an ensemble of 8 models, we achieved the new state-of-the-art performance on the [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/1/leaderboard) with the overall accuracy **70.92%**. 
 
-## Update Aug. 1
+## Update Aug. 1st
 Our solution for the VQA Challenge 2017 is updated! 
 
 We proposed a **high-order** extention for MFB, i.e., the Multi-modal Factorized High-order Pooling (MFH). See the flowchart in Figure 2 and the implementations in `mfh_baseline` and `mfh-coatt-glove` folders. With an ensemble of 9 MFH+CoAtt+GloVe(+VG) models, **we won the 2nd place (tied with another team) in the VQA Challenge 2017**. The detailed information can be found in our paper (the second paper in the CITATION section on bottom of this page). 

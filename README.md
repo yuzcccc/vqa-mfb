@@ -30,11 +30,11 @@ We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the p
 |   Datasets\Models    | MCB | MFB | MFH  | MFH (FRCN img features) |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | VQA-1.0   | 65.38%   |66.87% [BaiduYun](http://pan.baidu.com/s/1o8LURge)   | 67.72% [BaiduYun](http://pan.baidu.com/s/1c2neUv2) or [Dropbox](https://www.dropbox.com/s/qh1swgsq0na1bua/VQA1.0-mfh-coatt-glove-vg.zip?dl=0) | **69.82%** |
-| VQA-2.0   | 62.33%<sup>1</sup>   |65.09% [BaiduYun](http://pan.baidu.com/s/1pLjtkSV)   | 66.12% [BaiduYun](http://pan.baidu.com/s/1pLLUvIN) or [Dropbox](https://www.dropbox.com/s/zld15405a69how6/VQA2.0-mfh-coatt-glove-vg.zip?dl=0) | **68.78%**<sup>2</sup> |
+| VQA-2.0   | 62.33%<sup>1</sup>   |65.09% [BaiduYun](http://pan.baidu.com/s/1pLjtkSV)   | 66.12% [BaiduYun](http://pan.baidu.com/s/1pLLUvIN) or [Dropbox](https://www.dropbox.com/s/zld15405a69how6/VQA2.0-mfh-coatt-glove-vg.zip?dl=0) | **68.76%**<sup>2</sup> |
 
-<sup>1</sup> the MCB result on VQA-2.0 is provided by the VQA Challenge organizer
+<sup>1</sup> the MCB result on VQA-2.0 is provided by the VQA Challenge organizer.
 
-<sup>2</sup> this model is trained without the VG dataset. We observe the fact that introducing VG here does not bring performance improvement 
+<sup>2</sup> this model is trained without the VG dataset. We observed the fact that introducing VG here does not bring performance improvement anymore.
 
 ## Training from Scratch
 

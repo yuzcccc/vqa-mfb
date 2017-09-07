@@ -27,9 +27,9 @@ Our codes is implemented based on the high-quality [vqa-mcb](https://github.com/
 
 We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the papers. To the best of our knowledge, our MFH+CoAtt+GloVe+VG model report the best result with a single model on both the VQA-1.0 and VQA-2.0 datasets. The corresponding results are shown in the table below. The results JSON files (results.zip for VQA-1.0) are also included in the model folders, which can be uploaded to the evaluation servers directly.
 
-|   Datasets\Models    | MCB | MFB | MFH  | MFH(Faster-RCNN visual features) |
+|   Datasets\Models    | MCB | MFB | MFH  | MFH (FRCN img features) |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
-| VQA-1.0   | 65.38%   |66.87% [BaiduYun](http://pan.baidu.com/s/1o8LURge)   | 67.72% [BaiduYun](http://pan.baidu.com/s/1c2neUv2) or [Dropbox](https://www.dropbox.com/s/qh1swgsq0na1bua/VQA1.0-mfh-coatt-glove-vg.zip?dl=0) | **69.82** |
+| VQA-1.0   | 65.38%   |66.87% [BaiduYun](http://pan.baidu.com/s/1o8LURge)   | 67.72% [BaiduYun](http://pan.baidu.com/s/1c2neUv2) or [Dropbox](https://www.dropbox.com/s/qh1swgsq0na1bua/VQA1.0-mfh-coatt-glove-vg.zip?dl=0) | **69.82%** |
 | VQA-2.0   | 62.33%*  |65.09% [BaiduYun](http://pan.baidu.com/s/1pLjtkSV)   | 66.12% [BaiduYun](http://pan.baidu.com/s/1pLLUvIN) or [Dropbox](https://www.dropbox.com/s/zld15405a69how6/VQA2.0-mfh-coatt-glove-vg.zip?dl=0) | **68.78%** |
 * the MCB result on VQA-2.0 is provided by the VQA Challenge organizer
 ## Training from Scratch

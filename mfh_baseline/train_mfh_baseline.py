@@ -59,22 +59,8 @@ def mfh_baseline(mode, batchsize, T, question_vocab_size, folder):
     n.embed_tanh = L.TanH(n.embed) 
 
     # LSTM
-    #n.lstm1 = L.LSTM(\
-    #               n.embed_tanh, n.cont,\
-    #               recurrent_param=dict(\
-    #                   num_output=config.LSTM_UNIT_NUM,\
-    #                   weight_filler=dict(type='xavier')))
-    #tops1 = L.Slice(n.lstm1, ntop=config.MAX_WORDS_IN_QUESTION, slice_param={'axis':0})
-    #for i in xrange(config.MAX_WORDS_IN_QUESTION-1):
-    #    n.__setattr__('slice_first'+str(i), tops1[int(i)])
-    #    n.__setattr__('silence_data_first'+str(i), L.Silence(tops1[int(i)],ntop=0))
-    #n.lstm1_out = tops1[config.MAX_WORDS_IN_QUESTION-1]
-    #n.lstm1_reshaped = L.Reshape(n.lstm1_out,\
-    #                      reshape_param=dict(\
-    #                          shape=dict(dim=[-1,1024])))
-    #n.q_feat = L.Dropout(n.lstm1_reshaped,dropout_param={'dropout_ratio':config.LSTM_DROPOUT_RATIO})
     n.lstm1 = L.LSTM(\
-                   n.embed, n.cont,\
+                   n.embed_tanh, n.cont,\
                    recurrent_param=dict(\
                        num_output=config.LSTM_UNIT_NUM,\
                        weight_filler=dict(type='xavier')))
@@ -86,26 +72,8 @@ def mfh_baseline(mode, batchsize, T, question_vocab_size, folder):
     n.lstm1_reshaped = L.Reshape(n.lstm1_out,\
                           reshape_param=dict(\
                               shape=dict(dim=[-1,1024])))
-    n.lstm1_reshaped_droped = L.Dropout(n.lstm1_reshaped,dropout_param={'dropout_ratio':config.LSTM_DROPOUT_RATIO})
-    n.lstm1_droped = L.Dropout(n.lstm1,dropout_param={'dropout_ratio':config.LSTM_DROPOUT_RATIO})
+    n.q_feat = L.Dropout(n.lstm1,dropout_param={'dropout_ratio':config.LSTM_DROPOUT_RATIO})
 
-    # LSTM2
-    n.lstm2 = L.LSTM(\
-                   n.lstm1_droped, n.cont,\
-                   recurrent_param=dict(\
-                       num_output=config.LSTM_UNIT_NUM, 
-                       weight_filler=dict(type='xavier')))
-    tops2 = L.Slice(n.lstm2, ntop=config.MAX_WORDS_IN_QUESTION, slice_param={'axis':0})
-    for i in xrange(config.MAX_WORDS_IN_QUESTION-1):
-        n.__setattr__('slice_second'+str(i), tops2[int(i)])
-        n.__setattr__('silence_data_second'+str(i), L.Silence(tops2[int(i)],ntop=0))
-    n.lstm2_out = tops2[config.MAX_WORDS_IN_QUESTION-1]
-    n.lstm2_reshaped = L.Reshape(n.lstm2_out,\
-                          reshape_param=dict(\
-                              shape=dict(dim=[-1,1024])))
-    n.lstm2_reshaped_droped = L.Dropout(n.lstm2_reshaped,dropout_param={'dropout_ratio':config.LSTM_DROPOUT_RATIO})
-    concat_botom = [n.lstm1_reshaped_droped, n.lstm2_reshaped_droped]
-    n.q_feat = L.Concat(*concat_botom) 
     '''
     Coarse Image-Question MFH fusion
     '''

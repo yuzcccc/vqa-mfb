@@ -59,14 +59,14 @@ If the codes are helpful for your research, please cite
 ```
 @article{yu2017mfb,
   title={Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering},
-  author={Zhou, Yu and Jun, Yu and Jianping, Fan and Dacheng, Tao},
+  author={Yu, Zhou and Yu, Jun and Fan, Jianping and Tao, Dacheng},
   journal={IEEE International Conference on Computer Vision (ICCV)},
   year={2017}
 }
 
 @article{yu2017beyond,
   title={Beyond Bilinear: Generalized Multi-modal Factorized High-order Pooling for Visual Question Answering},
-  author={Zhou, Yu and Jun, Yu and Chenchao, Xiang and Jianping, Fan and Dacheng, Tao},
+  author={Yu, Zhou and Yu, Jun and Xiang, Chenchao and Fan, Jianping and Tao, Dacheng},
   journal={arXiv preprint arXiv:1708.03619},
   year={2017}
 }

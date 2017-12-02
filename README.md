@@ -5,6 +5,8 @@ This project is the implementation of the paper **Multi-modal Factorized Bilinea
 ![Figure 1: The MFB+CoAtt Network architecture for VQA.](https://github.com/yuzcccc/mfb/raw/master/imgs/MFB-github.png)
 <center>Figure 1: The MFB+CoAtt Network architecture for VQA.</center>
 
+## Update Dec. 2nd
+The 3rd-party pytorch implementation for MFB(MFH) is released [here](https://github.com/asdf0982/vqa-mfb.pytorch). Great thanks, Liam!
 
 ## Update Sep. 5th
 Using the image features (the model with adaptive K ranges from [10,100]) [here](https://github.com/peteanderson80/bottom-up-attention), our single MFH+CoAtt+GloVe model achieved the overall accuracy **68.76%** on the test-dev set of VQA-2.0 dataset. With an ensemble of 8 models, we achieved the new state-of-the-art performance on the VQA-2.0 dataset's [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/1/leaderboard) with the overall accuracy **70.92%**. 

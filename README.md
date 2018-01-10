@@ -63,6 +63,7 @@ If the codes are helpful for your research, please cite
   title={Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering},
   author={Yu, Zhou and Yu, Jun and Fan, Jianping and Tao, Dacheng},
   journal={IEEE International Conference on Computer Vision (ICCV)},
+  pages={1839--1848},
   year={2017}
 }
 

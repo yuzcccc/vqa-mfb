@@ -27,7 +27,7 @@ Our codes is implemented based on the high-quality [vqa-mcb](https://github.com/
 
 ## Pretrained Models
 
-We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the papers. To the best of our knowledge, our MFH+CoAtt+GloVe+VG model report the best result (test-dev) with a single model on both the VQA-1.0 and VQA-2.0 datasets. The corresponding results are shown in the table below. The results JSON files (results.zip for VQA-1.0) are also included in the model folders, which can be uploaded to the evaluation servers directly.
+We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the papers. To the best of our knowledge, our MFH+CoAtt+GloVe+VG model report the best result (test-dev) with a single model on both the VQA-1.0 and VQA-2.0 datasets(train + val + visual genome). The corresponding results are shown in the table below. The results JSON files (results.zip for VQA-1.0) are also included in the model folders, which can be uploaded to the evaluation servers directly.
 
 |   Datasets\Models    | MCB | MFB | MFH  | MFH (FRCN img features) |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|

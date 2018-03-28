@@ -67,7 +67,7 @@ If the codes are helpful for your research, please cite
   year={2017}
 }
 
-@article{yu2017beyond,
+@article{yu2018beyond,
   title={Beyond Bilinear: Generalized Multi-modal Factorized High-order Pooling for Visual Question Answering},
   author={Yu, Zhou and Yu, Jun and Xiang, Chenchao and Fan, Jianping and Tao, Dacheng},
   journal={IEEE Transactions on Neural Networks and Learning Systems},

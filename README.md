@@ -1,4 +1,4 @@
-# Multi-modal Factorized Bilinear Pooling (MFB) for VQA
+# Multi-modal Factorized Bilinear Pooling (MFB) and MFH for VQA
 
 This project is the implementation of the paper **Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering**. Compared with existing state-of-the-art approaches such as MCB and MLB, our MFB models achieved superior performance on the large-scale VQA-1.0 and VQA-2.0 datasets. The MFB+CoAtt network architecture for VQA is illustrated in Figure 1. 
 

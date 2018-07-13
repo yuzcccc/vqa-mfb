@@ -1,6 +1,6 @@
 # MFB and MFH for VQA
 
-This project is the implementation of the paper **Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering**. Compared with existing state-of-the-art approaches such as MCB and MLB, our MFB models achieved superior performance on the large-scale VQA-1.0 and VQA-2.0 datasets. Moreover, MFH, the high-order extention of MFB, is also proveided to report better VQA performance. The MFB(MFH)+CoAtt network architecture for VQA is illustrated in Figure 1. 
+This project is the implementation of the papers **Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering (MFB)** and **Beyond Bilinear: Generalized Multi-modal Factorized High-order Pooling for Visual Question Answering (MFH)**. Compared with existing state-of-the-art approaches such as MCB and MLB, our MFB models achieved superior performance on the large-scale VQA-1.0 and VQA-2.0 datasets. Moreover, MFH, the high-order extention of MFB, is also proveided to report better VQA performance. The MFB(MFH)+CoAtt network architecture for VQA is illustrated in Figure 1. 
 
 ![Figure 1: The MFB+CoAtt Network architecture for VQA.](https://github.com/yuzcccc/mfb/raw/master/imgs/MFB-github.png)
 <center>Figure 1: The MFB+CoAtt Network architecture for VQA.</center>
@@ -27,16 +27,16 @@ Our codes is implemented based on the high-quality [vqa-mcb](https://github.com/
 
 ## Pretrained Models
 
-We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the papers. To the best of our knowledge, our MFH+CoAtt+GloVe+VG model report the best result (test-dev) with a single model on both the VQA-1.0 and VQA-2.0 datasets(train + val + visual genome). The corresponding results are shown in the table below. The results JSON files (results.zip for VQA-1.0) are also included in the model folders, which can be uploaded to the evaluation servers directly.
+We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the papers. To the best of our knowledge, our MFH+CoAtt+GloVe+VG model report the best result (test-dev) with a single model on both the VQA-1.0 and VQA-2.0 datasets(train + val + visual genome). The corresponding results are shown in the table below. The results JSON files (results.zip for VQA-1.0) are also included in the model folders, which can be uploaded to the evaluation servers directly. **Note that the models are trained with a old version of GloVe in spacy. If you use the latest one, they maybe incosistent, leading to inferior performance. I suggest training the model from scratch by yourself.**
 
 |   Datasets\Models    | MCB | MFB | MFH  | MFH (FRCN img features) |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | VQA-1.0   | 65.38%   |66.87% [BaiduYun](http://pan.baidu.com/s/1o8LURge)   | 67.72% [BaiduYun](http://pan.baidu.com/s/1c2neUv2) or [Dropbox](https://www.dropbox.com/s/qh1swgsq0na1bua/VQA1.0-mfh-coatt-glove-vg.zip?dl=0) | **69.82%** |
 | VQA-2.0   | 62.33%<sup>1</sup>   |65.09% [BaiduYun](http://pan.baidu.com/s/1pLjtkSV)   | 66.12% [BaiduYun](http://pan.baidu.com/s/1pLLUvIN) or [Dropbox](https://www.dropbox.com/s/zld15405a69how6/VQA2.0-mfh-coatt-glove-vg.zip?dl=0) | **68.76%**<sup>2</sup> |
 
-<sup>1</sup> the MCB result on VQA-2.0 is provided by the VQA Challenge organizer.
+<sup>1</sup> the MCB result on VQA-2.0 is provided by the VQA Challenge organizer with does not introdunce the GloVe embedding.
 
-<sup>2</sup> this model is trained without the VG dataset. We observed the fact that introducing VG here does not bring performance improvement anymore.
+<sup>2</sup> this model is trained without the VG dataset.
 
 ## Training from Scratch
 

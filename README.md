@@ -9,7 +9,7 @@ This project is the implementation of the papers **Multi-modal Factorized Biline
 The 3rd-party pytorch implementation for MFB(MFH) is released [here](https://github.com/asdf0982/vqa-mfb.pytorch). Great thanks, Liam!
 
 ## Update Sep. 5th
-Using the image features (the model with adaptive K ranges from [10,100]) [here](https://github.com/peteanderson80/bottom-up-attention), our single MFH+CoAtt+GloVe model achieved the overall accuracy **68.76%** on the test-dev set of VQA-2.0 dataset. With an ensemble of 8 models, we achieved the new state-of-the-art performance on the VQA-2.0 dataset's [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/1/leaderboard) with the overall accuracy **70.92%**. 
+Using the Bottom-up and Top-Down (BUTD) image features (the model with adaptive K ranges from [10,100]) [here](https://github.com/peteanderson80/bottom-up-attention), our single MFH+CoAtt+GloVe model achieved the overall accuracy **68.76%** on the test-dev set of VQA-2.0 dataset. With an ensemble of 8 models, we achieved the new state-of-the-art performance on the VQA-2.0 dataset's [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/1/leaderboard) with the overall accuracy **70.92%**. 
 
 ## Update Aug. 1st
 Our solution for the VQA Challenge 2017 is updated! 
@@ -29,7 +29,7 @@ Our codes is implemented based on the high-quality [vqa-mcb](https://github.com/
 
 We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the papers. To the best of our knowledge, our MFH+CoAtt+GloVe+VG model report the best result (test-dev) with a single model on both the VQA-1.0 and VQA-2.0 datasets(train + val + visual genome). The corresponding results are shown in the table below. The results JSON files (results.zip for VQA-1.0) are also included in the model folders, which can be uploaded to the evaluation servers directly. **Note that the models are trained with a old version of GloVe in spacy. If you use the latest one, they maybe incosistent, leading to inferior performance. I suggest training the model from scratch by yourself.**
 
-|   Datasets\Models    | MCB | MFB | MFH  | MFH (FRCN img features) |
+|   Datasets\Models    | MCB | MFB | MFH  | MFH (BUTD img features) |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | VQA-1.0   | 65.38%   |66.87% [BaiduYun](http://pan.baidu.com/s/1o8LURge)   | 67.72% [BaiduYun](http://pan.baidu.com/s/1c2neUv2) or [Dropbox](https://www.dropbox.com/s/qh1swgsq0na1bua/VQA1.0-mfh-coatt-glove-vg.zip?dl=0) | **69.82%** |
 | VQA-2.0   | 62.33%<sup>1</sup>   |65.09% [BaiduYun](http://pan.baidu.com/s/1pLjtkSV)   | 66.12% [BaiduYun](http://pan.baidu.com/s/1pLLUvIN) or [Dropbox](https://www.dropbox.com/s/zld15405a69how6/VQA2.0-mfh-coatt-glove-vg.zip?dl=0) | **68.76%**<sup>2</sup> |

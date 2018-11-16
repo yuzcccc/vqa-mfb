@@ -36,8 +36,6 @@ We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the p
 
 <sup>1</sup> the MCB result on VQA-2.0 is provided by the VQA Challenge organizer with does not introdunce the GloVe embedding.
 
-<sup>2</sup> this model is trained without the VG dataset.
-
 ## Training from Scratch
 
 We provide the scripts for training two MFB models from scratch, i.e., `mfb-baseline` and `mfb-coatt-glove` folders. Simply running the python scripts `train_*.py` to train the models from scratch. 

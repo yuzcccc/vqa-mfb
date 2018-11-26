@@ -69,7 +69,9 @@ If the codes are helpful for your research, please cite
   title={Beyond Bilinear: Generalized Multi-modal Factorized High-order Pooling for Visual Question Answering},
   author={Yu, Zhou and Yu, Jun and Xiang, Chenchao and Fan, Jianping and Tao, Dacheng},
   journal={IEEE Transactions on Neural Networks and Learning Systems},
-  doi={10.1109/TNNLS.2018.2817340},
+  volume={29},
+  number={12},
+  pages={5947--5959},
   year={2018}
 }
 ```

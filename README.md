@@ -35,6 +35,7 @@ We release the pretrained **single model** "MFB(or MFH)+CoAtt+GloVe+VG" in the p
 | VQA-2.0   | 62.33%<sup>1</sup>   |65.09% [BaiduYun](http://pan.baidu.com/s/1pLjtkSV)   | 66.12% [BaiduYun](http://pan.baidu.com/s/1pLLUvIN) or [Dropbox](https://www.dropbox.com/s/zld15405a69how6/VQA2.0-mfh-coatt-glove-vg.zip?dl=0) | **68.76%**<sup>2</sup> |
 
 <sup>1</sup> the MCB result on VQA-2.0 is provided by the VQA Challenge organizer with does not introdunce the GloVe embedding.
+
 <sup>2</sup> overall: 68.76, yes/no: 84.27, num: 49.56, other: 59.89
 
 ## Training from Scratch

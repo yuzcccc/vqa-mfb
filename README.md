@@ -1,6 +1,6 @@
 # MFB and MFH for VQA
 
-**This project is deprecated. The Pytorch implementation of MFB(MFH)+CoAtt models with pre-trained models, as well as several state-of-the-art VQA models are maintained in our [OpenVQA](https://github.com/MILVLG/openvqa) project, which is much more convenient to use!**
+**This project is deprecated! The Pytorch implementation of MFB(MFH)+CoAtt with pre-trained models, along with several state-of-the-art VQA models are maintained in our [OpenVQA](https://github.com/MILVLG/openvqa) project, which is much more convenient to use!**
 
 This project is the implementation of the papers *[Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering (MFB)](https://arxiv.org/abs/1708.01471)* and *[Beyond Bilinear: Generalized Multi-modal Factorized High-order Pooling for Visual Question Answering (MFH)](https://arxiv.org/abs/1708.03619)*. Compared with existing state-of-the-art approaches such as MCB and MLB, our MFB models achieved superior performance on the large-scale VQA-1.0 and VQA-2.0 datasets. Moreover, MFH, the high-order extention of MFB, is also proveided to report better VQA performance. The MFB(MFH)+CoAtt network architecture for VQA is illustrated in Figure 1. 
 

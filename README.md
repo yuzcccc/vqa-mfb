@@ -1,17 +1,19 @@
 # MFB and MFH for VQA
 
-This project is the implementation of the papers **Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering (MFB)** and **Beyond Bilinear: Generalized Multi-modal Factorized High-order Pooling for Visual Question Answering (MFH)**. Compared with existing state-of-the-art approaches such as MCB and MLB, our MFB models achieved superior performance on the large-scale VQA-1.0 and VQA-2.0 datasets. Moreover, MFH, the high-order extention of MFB, is also proveided to report better VQA performance. The MFB(MFH)+CoAtt network architecture for VQA is illustrated in Figure 1. 
+**This project is deprecated. The Pytorch implementation of MFB(MFH)+CoAtt models with pre-trained models, as well as several state-of-the-art VQA models are maintained in our [OpenVQA](https://github.com/MILVLG/openvqa) project, which is much more convenient to use!**
+
+This project is the implementation of the papers *[Multi-modal Factorized Bilinear Pooling with Co-Attention Learning for Visual Question Answering (MFB)](https://arxiv.org/abs/1708.01471)* and *[Beyond Bilinear: Generalized Multi-modal Factorized High-order Pooling for Visual Question Answering (MFH)](https://arxiv.org/abs/1708.03619)*. Compared with existing state-of-the-art approaches such as MCB and MLB, our MFB models achieved superior performance on the large-scale VQA-1.0 and VQA-2.0 datasets. Moreover, MFH, the high-order extention of MFB, is also proveided to report better VQA performance. The MFB(MFH)+CoAtt network architecture for VQA is illustrated in Figure 1. 
 
 ![Figure 1: The MFB+CoAtt Network architecture for VQA.](https://github.com/yuzcccc/mfb/raw/master/imgs/MFB-github.png)
 <center>Figure 1: The MFB+CoAtt Network architecture for VQA.</center>
 
-## Update Dec. 2nd
+## Update Dec. 2nd, 2017
 The 3rd-party pytorch implementation for MFB(MFH) is released [here](https://github.com/asdf0982/vqa-mfb.pytorch). Great thanks, Liam!
 
-## Update Sep. 5th
+## Update Sep. 5th, 2017
 Using the Bottom-up and Top-Down (BUTD) image features (the model with adaptive K ranges from [10,100]) [here](https://github.com/yuzcccc/bottom-up-attention), our single MFH+CoAtt+GloVe model achieved the overall accuracy **68.76%** on the test-dev set of VQA-2.0 dataset. With an ensemble of 8 models, we achieved the new state-of-the-art performance on the VQA-2.0 dataset's [leaderboard](https://evalai.cloudcv.org/web/challenges/challenge-page/1/leaderboard) with the overall accuracy **70.92%**. 
 
-## Update Aug. 1st
+## Update Aug. 1st, 2019
 Our solution for the VQA Challenge 2017 is updated! 
 
 We proposed a **high-order** extention for MFB, i.e., the Multi-modal Factorized High-order Pooling (MFH). See the flowchart in Figure 2 and the implementations in `mfh_baseline` and `mfh-coatt-glove` folders. With an ensemble of 9 MFH+CoAtt+GloVe(+VG) models, **we won the 2nd place (tied with another team) in the VQA Challenge 2017**. The detailed information can be found in our paper (the second paper in the CITATION section on bottom of this page). 
